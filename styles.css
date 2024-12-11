@@ -3,10 +3,11 @@
 }
 
 html {
-  height: 100dvh;
+  min-height: 100vh;
 }
 
 body {
+  height: 100%;
   margin: 0;
   font-family: "Outfit", "Young Serif", sans-serif;
   font-size: var(--inter-font-size-medium);
@@ -122,7 +123,7 @@ li span {
 }
 
 .instructions-container > ol > li {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 .prep-time-container > ul,
@@ -158,13 +159,13 @@ header > img {
 }
 
 .instructions-container > ol {
-    list-style-position: outside;
-    padding-left: 1.5rem;
-    text-wrap: pretty;
+  list-style-position: outside;
+  padding-left: 1.5rem;
+  text-wrap: pretty;
 }
 
 .instructions-container > ol > li {
-    padding-left: 1rem;
+  padding-left: 1rem;
 }
 
 table {
@@ -180,7 +181,7 @@ table > tbody > tr > td {
 }
 
 table > tbody > tr > td.measurement {
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   width: 50%;
   color: var(--brown-800);
   font-weight: var(--outfit-bold-font-weight);
@@ -192,12 +193,37 @@ table > tbody > tr {
   border-bottom: 1px solid var(--stone-150);
 }
 
+table > tbody > tr:nth-child(4) {
+  border-bottom: 0;
+}
+
 /* ============
       Media Queries
       =========== */
 
 @media (min-width: 376px) {
+  main {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 38.5rem;
+    border-radius: 24px;
+  }
+
+  header {
+    max-width: 34.5rem;    
+    margin: 2rem 2rem 0 2rem;
+  }
+
+  header > img {
+    border-radius: 12px;
+  }
+
 }
 
 @media (min-width: 769px) {
+  main, 
+  header {
+    min-width: auto;
+    max-width: 46rem;
+  }
 }
