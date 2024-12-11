@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  html {
+    height: 100dvh;
+  }
+  
+  body {
+    margin: 0;
+    height: 100%;
+    font-family: "Outfit", "Young Serif", sans-serif;
+    font-size: var(--inter-font-size-medium);
+    background-color: var(--Gray-900);
+    color: var(--White);
+  }
+  
+  main {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* STYLE GUIDE */
+  :root {
+    /* Main Colors */
+    --rose-800: #7A284E;
+    --rose-50: #FFF7FB;
+    --stone-900: #312E2C;
+    --stone-600: #5F564D;
+    --stone-150: #E3DDD7;
+    --stone-100: #F3E5D7;
+    --brown-800: #854632;
+    --white: #ffffff;
+  
+    /* Typography */
+  
+    /* Preset 1 - 40px */
+    --young-serif-line-height: 100%;
+    --young-serif-font-size-large: 2.5rem;
+  
+    /* Preset 2 - 28px */
+    --young-serif-line-height: 100%;
+    --young-serif-font-size-medium: 1.75rem;
+  
+    /* Preset 3 - 20px Semibold*/
+    --outfit-semibold-font-weight: 600;
+    --outfit-semibold-line-height: 100%;
+    --outfit-semibold-font-size: 1.25rem;
+
+    /* Preset 4 - 16px */
+    --outfit-regular-line-height: 150%;
+    --outfit-regular-font-size: 1rem;
+
+    /* Preset 4 - 16px Bold*/
+    --outfit-bold-font-weight: 700;
+    --outfit-bold-line-height: 150%;
+    --outfit-bold-font-size: 1rem;
+
+  }
+  
+  /* Main Styling */
+  
+  
+  
+  /* Button Styling */
+  
+  
+  
+  /* ============
+      Media Queries
+      =========== */
+  
+  @media (min-width: 376px) {
+    
+  }
+  
+  @media (min-width: 769px) {
+
+  }
