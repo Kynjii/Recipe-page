@@ -1,98 +1,165 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  html {
-    height: 100dvh;
-  }
-  
-  body {
-    margin: 0;
-    font-family: "Outfit", "Young Serif", sans-serif;
-    font-size: var(--inter-font-size-medium);
-    background-color: var(--stone-100);
-  }
-  
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: var(--white);
-    height: 100%;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100dvh;
+}
+
+body {
+  margin: 0;
+  font-family: "Outfit", "Young Serif", sans-serif;
+  font-size: var(--inter-font-size-medium);
+  background-color: var(--stone-100);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: var(--white);
+  height: 100%;
+  width: 100%;
+}
+
+/* STYLE GUIDE */
+:root {
+  /* Main Colors */
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+  --brown-800: #854632;
+  --white: #ffffff;
+
+  /* Typography */
+
+  /* Preset 1 - 40px */
+  --young-serif-line-height: 100%;
+  --young-serif-font-size-large: 2.5rem;
+
+  /* Preset 2 - 28px */
+  --young-serif-line-height: 100%;
+  --young-serif-font-size-medium: 1.75rem;
+
+  /* Preset 3 - 20px Semibold*/
+  --outfit-semibold-font-weight: 600;
+  --outfit-semibold-line-height: 100%;
+  --outfit-semibold-font-size: 1.25rem;
+
+  /* Preset 4 - 16px */
+  --outfit-regular-line-height: 150%;
+  --outfit-regular-font-size: 1rem;
+
+  /* Preset 4 - 16px Bold*/
+  --outfit-bold-font-weight: 700;
+  --outfit-bold-line-height: 150%;
+  --outfit-bold-font-size: 1rem;
+}
+
+/* Main Styling */
+
+h1 {
+  font-size: 2.25rem;
+}
+
+section.prep-time-container > h2 {
+  font-family: "Outfit", sans-serif;
+  color: var(--brown-800);
+  font-weight: var(--outfit-semibold-font-weight);
+  line-height: var(--outfit-semibold-line-height);
+  font-size: var(--outfit-semibold-font-size);
+}
+
+h2 {
+  font-family: "Young Serif", sans-serif;
+  color: var(--brown-800);
+  line-height: var(--young-serif-line-height);
+  font-size: var(--young-serif-font-size-medium);
+}
+
+p {
+  color: var(--stone-600);
+  font-size: 1rem;
+  line-height: var(--outfit-regular-line-height);
+}
+
+.prep-time-container {
+  background-color: var(--rose-50);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+ol,
+ul {
+  color: var(--stone-600);
+  padding-left: 0;
+  list-style: inside;
+  /* list-style-type: none; */
+  line-height: var(--outfit-regular-line-height);
+  font-size: var(--outfit-regular-font-size);
+}
+
+hr {
+  border-bottom: 1px solid var(--stone-150);
+}
+
+/* ul > li:before {
+  content: "\002022";
+  padding-left: 0;
+  margin-right: 1rem;
+  color: var(--brown-800);
+} */
+
+header > img {
+  width: 100%;
+}
+
+.content-container {
+  padding: 2.5rem 2rem;
+}
+
+.description-container > h1 {
+  margin-top: 0;
+  color: var(--stone-900);
+  font-family: "Young Serif";
+  --young-serif-line-height: 100%;
+  --young-serif-font-size-large: 2.25rem;
+}
+
+table {
+    border-collapse: collapse;
     width: 100%;
-  }
-  
-  /* STYLE GUIDE */
-  :root {
-    /* Main Colors */
-    --rose-800: #7A284E;
-    --rose-50: #FFF7FB;
-    --stone-900: #312E2C;
-    --stone-600: #5F564D;
-    --stone-150: #E3DDD7;
-    --stone-100: #F3E5D7;
-    --brown-800: #854632;
-    --white: #ffffff;
-  
-    /* Typography */
-  
-    /* Preset 1 - 40px */
-    --young-serif-line-height: 100%;
-    --young-serif-font-size-large: 2.5rem;
-  
-    /* Preset 2 - 28px */
-    --young-serif-line-height: 100%;
-    --young-serif-font-size-medium: 1.75rem;
-  
-    /* Preset 3 - 20px Semibold*/
-    --outfit-semibold-font-weight: 600;
-    --outfit-semibold-line-height: 100%;
-    --outfit-semibold-font-size: 1.25rem;
+}
 
-    /* Preset 4 - 16px */
-    --outfit-regular-line-height: 150%;
-    --outfit-regular-font-size: 1rem;
-
-    /* Preset 4 - 16px Bold*/
-    --outfit-bold-font-weight: 700;
-    --outfit-bold-line-height: 150%;
-    --outfit-bold-font-size: 1rem;
-
-  }
-  
-  /* Main Styling */
-  
-  
-  header > img {
-    width: 375px;
-  }
-
-  .content-container {
-    padding: 2.5rem 2rem;
-  }
-
-  .description-container > h1 {
-    margin-top: 0;
-    color: var(--stone-900);
-    font-family: "Young Serif";
-    --young-serif-line-height: 100%;
-    --young-serif-font-size-large: 2.25rem;
-  }
-
-  p {
+table > tbody > tr > td {
+    padding-left: 2rem;
+    width: 50%;
     color: var(--stone-600);
-  }
-  
-  
-  
-  /* ============
+    line-height: var(--outfit-regular-line-height);
+}
+
+table > tbody > tr > td.measurement {
+    padding-left: 0;
+    width: 50%;
+    color: var(--brown-800);
+    font-weight: var(--outfit-bold-font-weight);
+    font-size: var(--outfit-bold-font-size);
+    line-height: var(--outfit-bold-line-height);
+}
+
+table > tbody > tr {
+    border-bottom: 1px solid var(--stone-150);
+}
+
+/* ============
       Media Queries
       =========== */
-  
-  @media (min-width: 376px) {
-    
-  }
-  
-  @media (min-width: 769px) {
 
-  }
+@media (min-width: 376px) {
+}
+
+@media (min-width: 769px) {
+}
