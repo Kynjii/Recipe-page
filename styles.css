@@ -20,7 +20,8 @@ body {
   line-height: 100%;
 }
 
-main, .header {
+main,
+.header {
   background-color: var(--white);
 }
 
@@ -143,7 +144,7 @@ hr {
 }
 
 .content-container {
-  padding: 2.5rem 2rem .5rem 2rem;
+  padding: 2.5rem 2rem 0.5rem 2rem;
 }
 
 .description-container > h1 {
@@ -206,7 +207,6 @@ table > tbody > tr:nth-child(4) {
   body {
     padding: 5rem;
   }
-  
 
   main {
     justify-self: center;
