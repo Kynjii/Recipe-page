@@ -3,7 +3,7 @@
 }
 
 html, body {
-  height: 100%;
+  min-height: 100dvh;
   margin: 0;
   padding: 0;
   font-family: "Outfit", "Young Serif", sans-serif;
@@ -12,7 +12,7 @@ html, body {
   line-height: 100%;
 }
 
-main {
+main, .header {
   background-color: var(--white);
 }
 
@@ -129,12 +129,12 @@ hr {
   border-bottom: 1px solid var(--stone-150);
 }
 
-header > img {
+.header > img {
   width: 100%;
 }
 
 .content-container {
-  padding: 2.5rem 2rem;
+  padding: 2.5rem 2rem .5rem 2rem;
 }
 
 .description-container > h1 {
@@ -194,36 +194,31 @@ table > tbody > tr:nth-child(4) {
       =========== */
 
 @media (min-width: 376px) {
-  body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
   main {
-    margin: 2rem;
+    margin: 2rem auto;
     display: flex;
     flex-direction: column;
     max-width: 38.5rem;
     border-radius: 24px;
   }
 
-  header {
+  .header {
     max-width: 34.5rem;
     margin: 2rem 2rem 0 2rem;
   }
 
-  header > img {
+  .header > img {
     border-radius: 12px;
   }
 }
 
 @media (min-width: 769px) {
-  main,
-  header {
-    max-width: 46rem;
+  main {
+    margin: 4rem auto;
   }
 
-
+  main,
+  .header {
+    max-width: 46rem;
+  }
 }
