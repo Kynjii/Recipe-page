@@ -208,18 +208,17 @@ table > tbody > tr:nth-child(4) {
   }
 
   header {
-    max-width: 34.5rem;    
+    max-width: 34.5rem;
     margin: 2rem 2rem 0 2rem;
   }
 
   header > img {
     border-radius: 12px;
   }
-
 }
 
 @media (min-width: 769px) {
-  main, 
+  main,
   header {
     min-width: auto;
     max-width: 46rem;
