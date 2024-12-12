@@ -205,6 +205,7 @@ table > tbody > tr:nth-child(4) {
     margin-right: auto;
     max-width: 38.5rem;
     border-radius: 24px;
+    max-height: 80%;
   }
 
   header {
@@ -223,4 +224,6 @@ table > tbody > tr:nth-child(4) {
     min-width: auto;
     max-width: 46rem;
   }
+
+
 }
